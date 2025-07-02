@@ -1,0 +1,27 @@
+let fruits = ["Яблоко", "Банан", "Апельсин"];
+console.log(fruits);
+console.log(fruits[0]);
+console.log(fruits[2]);
+fruits.push('Груша');
+fruits.pop();
+fruits.shift();
+console.log(fruits);
+fruits.forEach(function(fruit) {
+  console.log(fruit);
+});
+let lengths = fruits.map(fruit => fruit.length);
+console.log(lengths);
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers);
+let sum = numbers.reduce((acc, num) => acc + num, 0);
+console.log(sum);
+let firstGreaterThanFive = numbers.find(num => num > 5);
+console.log(firstGreaterThanFive);
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let combined = arr1.concat(arr2);
+console.log(combined);
+let hasBanana = fruits.includes("Банан");
+console.log(hasBanana);
+fruits.reverse();
